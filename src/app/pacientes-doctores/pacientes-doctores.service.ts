@@ -12,7 +12,9 @@ export class PacientesDoctoresService {
   private personas: PacientesDoctores[] = [
   ];
 
-  constructor() {
+   constructor(private dataServices:DataServices) { }
+
+   constructor() {
 
     if (location.hostname === "localhost") {
       const firebaseConfig = {
@@ -27,14 +29,15 @@ export class PacientesDoctoresService {
     }
    }
 
+
   getPacientesDoctores(): PacientesDoctores[] {
-    //this.dataServices.agregarPacientesDoctores(this.personas);
+    this.dataServices.agregarPacientesDoctores(this.personas);
     return this.personas;
   }
 
   agregarPacientesDoctores(persona: PacientesDoctores) {
     this.personas.push(persona);
-    //this.dataServices.agregarPacientesDoctores(this.personas);
+    this.dataServices.agregarPacientesDoctores(this.personas);
   }
 
   editarPacientesDoctores(persona: PacientesDoctores) {
