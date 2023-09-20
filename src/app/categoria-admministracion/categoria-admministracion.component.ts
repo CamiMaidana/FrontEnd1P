@@ -6,7 +6,7 @@ import { CategoriaService } from '../categoria.service';
 @Component({
   selector: 'app-categoria-administracion',
   templateUrl: './categoria-admministracion.component.html',
-  styleUrls: ['./categoria-admministracion.component.css']
+  styleUrls: ['./categoria-admministracion.component.css'],
 })
 export class CategoriaAdministracionComponent {
   categorias: Categoria[] = [];
