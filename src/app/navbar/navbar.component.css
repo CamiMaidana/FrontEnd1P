@@ -22,3 +22,42 @@ ul a:hover {
   background-color: #f0f0f0;
   color: #000;
 }
+
+
+/* Estilos base para pantallas grandes */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  padding: 10px 20px; /* Aumentar el espaciado horizontal */
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px; /* Reducir el tamaño del texto */
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Apilar los elementos verticalmente */
+  }
+
+  ul a {
+    padding: 10px; /* Espaciado uniforme */
+    margin: 5px; /* Reducir el margen */
+  }
+}
+
+ul a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.active {
+  background-color: #f0f0f0;
+  color: #000;
+}

@@ -140,3 +140,52 @@ table {
   border-spacing: 10px;
   margin: 0 auto; /* Centra la tabla horizontalmente */
 }
+
+.table-container {
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos adicionales para hacer la tabla responsive */
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Establece un ancho máximo para las celdas */
+  td {
+    max-width: 100%;
+  }
+
+  /* Oculta las filas del encabezado */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    /* Alinea el contenido al centro si lo deseas */
+    text-align: center;
+  }
+}

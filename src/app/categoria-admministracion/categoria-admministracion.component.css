@@ -113,4 +113,29 @@
     background-color: #333;
   }
   
-  
+  /* Estilos base para pantallas grandes */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+  h2 {
+      font-size: 20px;
+  }
+  input[type="text"] {
+      width: 100%;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  h2 {
+      font-size: 18px;
+  }
+}
